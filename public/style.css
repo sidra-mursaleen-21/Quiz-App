@@ -1,0 +1,201 @@
+/* first page */
+
+.first {
+  height: 95vh;
+  background-image: url("images/backgroundimage3.webp");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50%;
+  background-color: #c1b6f7;
+}
+
+.container input {
+  border: 2px solid black;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-color: #c1b6f7;
+  outline: none;
+  width: 300px;
+  font-size: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+
+.container input::placeholder {
+  color: black;
+}
+
+.container a {
+  border: 2px solid black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: black;
+}
+
+.container a:hover {
+  background-color: #a49bd2;
+  color: white;
+}
+
+/* second page */
+
+.main {
+  height: 95vh;
+  background-image: url("images/backgoundimage.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.minicontainer1 {
+  width: 900px;
+  height: 525px;
+  background-color: #ffc2c1;
+  padding: 0px 0px 0px 100px;
+  text-transform: capitalize;
+  word-spacing: 3px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 50px;
+}
+
+.minicontainer1 h1 {
+  margin-bottom: 10px;
+}
+
+.option {
+  text-transform: capitalize;
+  line-height: 2em;
+  font-size: 30px;
+  margin: 10px;
+  width: 600px;
+  padding-left: 30px;
+}
+
+.box {
+  font-size: 30px;
+  padding-right: 50px;
+  width: 790px;
+  height: 90px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.timer {
+  width: 60px;
+  height: 40px;
+  margin: 5px;
+  border: none;
+  outline: none;
+  background-color: #ffc2c1;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#minute {
+  text-align: end;
+}
+
+.next {
+  border: 2px solid black;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+}
+
+.next:hover {
+  background-color: #fbb1b0;
+  color: white;
+}
+
+.active {
+  background-color: #dbebf7;
+}
+
+/* third page */
+
+.end {
+  height: 95vh;
+  background-image: url("images/backgroundimage4.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.minicontainer2 {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50%;
+  background-color: #92c9f0;
+}
+
+.minicontainer2 #showScore {
+  margin-bottom: 50px;
+  font-size: 35px;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+.minicontainer2 h2 {
+  margin-bottom: 50px;
+  font-size: 35px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.minicontainer2 a {
+  font-size: 25px;
+  cursor: pointer;
+  border: 2px solid black;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+}
+
+.minicontainer2 a:hover {
+  background-color: #5d82bd;
+  color: white;
+}
