@@ -1,3 +1,17 @@
+// Your web app's Firebase configuration
+var firebaseConfig = {
+  apiKey: "AIzaSyAKUkNXzqJh5xDwXLKk12ouUy4H3BCmDn4",
+  authDomain: "quiz-app-c22dc.firebaseapp.com",
+  databaseURL: "https://quiz-app-c22dc-default-rtdb.firebaseio.com",
+  projectId: "quiz-app-c22dc",
+  storageBucket: "quiz-app-c22dc.appspot.com",
+  messagingSenderId: "553540079908",
+  appId: "1:553540079908:web:77635cc55d3429871f63b1",
+};
+
+// Initialize Firebase
+var app = firebase.initializeApp(firebaseConfig);
+
 var body = document.childNodes[1].childNodes[2];
 var container1 = document.createElement("div");
 
@@ -24,11 +38,12 @@ function firstpage() {
 // check if user enter the name or not
 
 function signUp() {
+  var userName = document.getElementById("userName");
+
   if (userName.value == "") {
     Swal.fire("Sorry!", "Please Enter Your Name .", "question");
   } else {
     container1.style.display = "none";
-    userName.value = "";
     mainPage();
   }
 }
@@ -269,6 +284,16 @@ function endPage() {
   buttonElement.appendChild(buttonText);
   container3.appendChild(buttonElement);
   showScore.innerHTML = "your score is : " + scoreCount;
+
+  // adding database
+
+  var obj = {
+    username: userName.value,
+    score: scoreCount
+  }
+
+  firebase.database().ref("information").push(obj);
+
   showName();
 }
 
